@@ -11,8 +11,12 @@ Contiene el código fuente del proyecto. Explora esta carpeta para revisar y ent
 Aquí se encuentran los archivos esenciales para la ejecución del programa. Asegúrate de revisar esta carpeta para garantizar que tienes todos los archivos necesarios para la simulación.
 
 ## Aclaraciones sobre el code.
-Inicialmente, la intención era llevar a cabo un proyecto que incluyera el diseño tridimensional (3D) tanto de Ken como del Hadouken para la parte gráfica del modelo. Sin embargo, debido a inconvenientes externos, no fue posible obtener el diseño 3D deseado. Ante esta situación, se tomó la decisión de realizar una demostración alternativa mediante la creación de un modelo 3D simplificado de una cabeza, representado en el archivo "Head.txt". En esta representación, la cabeza de color verde simboliza de manera estática a Ken, mientras que la cabeza de color azul representa hipotéticamente el Hadouken en movimiento. Este enfoque se adoptó para ofrecer una demostración visual a pesar de las limitaciones en la obtención del diseño 3D originalmente planeado.
+- Inicialmente, la intención era llevar a cabo un proyecto que incluyera el diseño tridimensional (3D) tanto de Ken como del Hadouken para la parte gráfica del modelo. Sin embargo, debido a inconvenientes externos, no fue posible obtener el diseño 3D deseado. Ante esta situación, se tomó la decisión de realizar una demostración alternativa mediante la creación de un modelo 3D simplificado de una cabeza, representado en el archivo "Head.txt". En esta representación, la cabeza de color verde simboliza de manera estática a Ken, mientras que la cabeza de color azul representa hipotéticamente el Hadouken en movimiento. Este enfoque se adoptó para ofrecer una demostración visual a pesar de las limitaciones en la obtención del diseño 3D originalmente planeado.
 
+- Se utilizará un modelo de cabeza existente para Ken, aprovechando la clase ya creada, sin necesidad de una clase adicional. En cambio, se creará una nueva clase específica para el Hadouken, permitiendo una gestión independiente de su lógica y comportamiento en la simulación.
+
+- La cabeza azul solo se dibuja cuando se completa el input, no está presente debajo de la verde todo el tiempo.
+  
 ## Caracteticticas.
 - Independientemente de la posición en la que se encuentre Ken, el Hadouken siempre se generará y lanzará desde su ubicación específica. Este diseño permite una representación consistente y predecible del lanzamiento del Hadouken, ofreciendo una demostración visual coherente sin importar la posición exacta de Ken en el entorno tridimensional.
 
@@ -25,3 +29,5 @@ Inicialmente, la intención era llevar a cabo un proyecto que incluyera el dise�
 Esta secuencia de teclas "J", "K", "L" constituye la combinación necesaria para llevar a cabo el Hadouken en la simulación, siguiendo la lógica y la secuencia establecida para la representación de acciones en el juego.
 
 - Se incorpora una lógica crucial en el juego donde las teclas 'j', 'k', 'l' deben ser presionadas en secuencia dentro de un límite de tiempo establecido para activar la acción asociada al ataque de Ken. Si la secuencia se rompe o si el tiempo excede el límite permitido, se reinicia el proceso, asegurando así que la ejecución del Hadouken esté sujeta a una secuencia precisa y oportuna por parte del jugador.
+
+![1111](https://github.com/RonaldPerez7-7/Hadouken/assets/147276285/6cc72dce-3296-484f-85bb-7dcf47dce643)
